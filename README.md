@@ -35,7 +35,7 @@ The service will be accessible at http://localhost:8080/api/v1/top_track.
 
 ### Get Top Tracks
 
-**Endpoint:** /api/v1/top_tracks
+**Endpoint:** /api/v1/top_track
 
 **Method:** GET
 
