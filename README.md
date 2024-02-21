@@ -1,5 +1,5 @@
 # go
-# Music Top Tracks Service
+# Music Top Track Service
 
 This service fetches the top track from Last.fm based on the specified region.
 
