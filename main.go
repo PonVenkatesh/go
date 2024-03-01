@@ -8,7 +8,7 @@ import (
 	"sync"
 )
 
-var lastFmAPIKey = "your_last_fm_api_key"
+var lastFmAPIKey = "a368603a9aced6717cc16064d50e0d14"
 
 // API Response structure
 // We can extend this to add suggested track struct
@@ -78,6 +78,7 @@ func getTopTrack(w http.ResponseWriter, r *http.Request) {
 	go getArtistInfo(&fmtArtistInfo, &fmApiResponse, &wg)
 
 	wg.Wait()
+
 	// Create TrackInfo struct from Last.fm response
 	firstTrack := fmApiResponse.Tracks.Track[0]
 	fmt.Println(" === Name : ", firstTrack.Artist.Name)
