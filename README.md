@@ -1,5 +1,5 @@
 # go
-# Music Top Tracks Service
+# Music Top Track Service
 
 This service fetches the top track from Last.fm based on the specified region.
 
@@ -9,6 +9,8 @@ Before running the service, make sure you have the following:
 
 - Go installed on your machine
 - Last.fm API key
+- Refer : https://www.last.fm/api#getting-started
+- Refer : https://lyricsovh.docs.apiary.io/#
 
 ## Installation
 
@@ -32,10 +34,14 @@ The service will be accessible at http://localhost:8080/api/v1/top_track.
 ## API Endpoint
 
 ### Get Top Tracks
-**Endpoint:** /api/v1/top_tracks
+
+**Endpoint:** /api/v1/top_track
+
 **Method:** GET
+
 **Query Parameter:**
     **region:** Specify the country for which you want to fetch the top track.
+    
 **Example:**
     `curl http://localhost:8080/api/v1/top_track?region=india`
 
@@ -54,3 +60,5 @@ The service will be accessible at http://localhost:8080/api/v1/top_track.
         "Image": "https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png"
     }
 }
+
+

@@ -96,7 +96,7 @@ func getTopTrack(w http.ResponseWriter, r *http.Request) {
 func main() {
 	// Register the handler function for /track/
 	fmt.Println("Starting the service..")
-	http.HandleFunc("/api/v1/top_tracks", getTopTrack)
+	http.HandleFunc("/api/v1/top_track", getTopTrack)
 
 	// Start the server on port 8080
 	fmt.Println("Listening the port 8080")
